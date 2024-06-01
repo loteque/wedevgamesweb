@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeDevGames</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: monospace;
+            scroll-behavior: smooth;
+        }
+        a {
+            text-decoration: none!important;
+        }
+        .bg-cover {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        nav {
+            background: rgba(41, 0, 44, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .contact-section {
+            position: relative;
+            height: 100%;
+            background: rgb(41, 0, 44);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            padding-top: 15pt;
+            color: rgb(41, 0, 44);
+        }
+        .contact-form {
+            position: relative;
+            z-index: 1;
+        }
+        .font-logo {
+            font-family: 'rowdy', sans-serif;
+            font-size: 72pt;
+            text-shadow: 0 0px 10px rgb(41, 0, 44)
+        }
+        .font-logo-title {
+            font-family: 'rowdy', sans-serif!important;
+            font-size: xx-large;
+        }
+        @font-face {
+            font-family: 'rowdy';
+            src: url('../hvd-rowdy.regular.ttf') format('truetype');
+        }
+    </style>
+</head>
+<body>
+    <nav class="text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-logo-title">
+                <a href="/#home">WeDevGames</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-cover" style="background-image: url('../wedev-flight-hero.png');" id="home">
+        <div class="flex items-center justify-center h-screen">
+            <h1 class="text-white text-4xl md:text-6xl font-logo">Message sent. Thank you!</h1>
+        </div>
+    </div>
+
+</body>
+</html>
